@@ -13,7 +13,7 @@ function App() {
   const [mistake, setMistake] = useState("");
 
   useEffect(() => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=82adbb50504fd730e8fe20e81d2da955`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${api_key}`;
     fetch(url)
       .then((res) => {
         if (!res.ok) {
